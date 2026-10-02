@@ -1,0 +1,28 @@
+# Created using wingetcreate 1.12.13.0
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: TylerHong.OpenTypeless
+PackageVersion: 1.4.1
+MinimumOSVersion: 10.0.19041.0
+InstallerType: inno
+Scope: user
+InstallModes:
+- interactive
+- silent
+- silentWithProgress
+UpgradeBehavior: install
+ProductCode: OpenTypeless_is1
+AppsAndFeaturesEntries:
+- DisplayName: OpenTypeless
+  Publisher: TylerHong
+  ProductCode: OpenTypeless_is1
+Installers:
+- Architecture: x64
+  InstallerUrl: https://github.com/Tyler913/OpenTypeless/releases/download/1.4.1/OpenTypeless-1.4.1-windows-x64-setup.exe
+  InstallerSha256: 5AB9A033B2A145C0E69A1C55445A94CCF9736DF4D40AAA0644C1E2E57066246C
+- Architecture: arm64
+  InstallerUrl: https://github.com/Tyler913/OpenTypeless/releases/download/1.4.1/OpenTypeless-1.4.1-windows-arm64-setup.exe
+  InstallerSha256: FB9A2F3EDF98CA805BA8D8CFB3888E88315133477F45CFADF6FB457A614AF6C8
+ManifestType: installer
+ManifestVersion: 1.10.0
+ReleaseDate: 2026-10-02
